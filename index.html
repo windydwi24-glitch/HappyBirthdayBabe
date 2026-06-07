@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday, Babe 🤍</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(180deg,#050b1d,#0c1735,#13214a);
+color:white;
+overflow-x:hidden;
+}
+
+section{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:40px 24px;
+text-align:center;
+position:relative;
+}
+
+.hero-title{
+font-family:'Cormorant Garamond',serif;
+font-size:clamp(3rem,8vw,5rem);
+color:#ffd9e6;
+line-height:1;
+margin-bottom:15px;
+}
+
+.hero-sub{
+font-size:1.1rem;
+opacity:.85;
+max-width:650px;
+line-height:1.8;
+}
+
+.cover{
+width:min(90vw,320px);
+height:min(90vw,320px);
+object-fit:cover;
+border-radius:30px;
+margin:35px 0;
+border:2px solid rgba(255,255,255,.15);
+box-shadow:0 20px 50px rgba(0,0,0,.4);
+}
+
+.btn{
+padding:15px 35px;
+border:none;
+border-radius:999px;
+background:#f472b6;
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:.3s;
+margin-top:30px;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+background:#ec4899;
+}
+
+.glass{
+width:min(90vw,800px);
+background:rgba(255,255,255,.07);
+backdrop-filter:blur(18px);
+padding:35px;
+border-radius:28px;
+border:1px solid rgba(255,255,255,.08);
+line-height:2;
+}
+
+.section-title{
+font-family:'Cormorant Garamond',serif;
+font-size:clamp(2rem,5vw,3rem);
+margin-bottom:25px;
+color:#ffe6ee;
+}
+
+.gallery{
+width:min(95vw,1000px);
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:18px;
+}
+
+.gallery img{
+width:100%;
+height:280px;
+object-fit:cover;
+border-radius:22px;
+transition:.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.04);
+}
+
+.hidden{
+display:none;
+}
+
+.footer{
+padding:30px;
+text-align:center;
+opacity:.6;
+font-size:.9rem;
+}
+
+.star{
+position:fixed;
+z-index:-1;
+animation:twinkle 4s infinite;
+}
+
+@keyframes twinkle{
+0%,100%{opacity:.2;}
+50%{opacity:1;}
+}
+
+</style>
+</head>
+
+<body>
+
+<section>
+
+<h1 class="hero-title">
+Happy Birthday 🤍
+</h1>
+
+<p class="hero-sub">
+Walaupun ada ratusan atau ribuan kilometer di antara kita,
+hari ini aku tetap ingin merayakanmu dengan cara yang spesial.
+</p>
+
+<img src="cover.jpeg" class="cover" alt="Our Photo">
+
+<p class="hero-sub">
+Different place, same love.
+</p>
+
+<button class="btn" onclick="openLetter()">
+Open My Letter 💌
+</button>
+
+</section>
+
+<section id="letter">
+
+<h2 class="section-title">
+For You 🤍
+</h2>
+
+<div class="glass">
+
+<p>
+Happy Birthday, Babe
+</P>
+
+<p>
+Today, I’m celebrating your birthday from a different city.
+I can’t be there to blow out the candles with you,
+hold your hand,
+or steal a moment beside your smile.
+</p>
+
+<p>
+But no matter how many miles lie between us,
+my heart has always known where home is—and it has always been with you.
+</p>
+
+<p>
+Thank you for holding on through the distance.
+Thank you for believing in us, even on the days when loving from afar feels difficult.
+</p>
+
+<p>
+On your special day,
+I want you to know how grateful I am to have you in my life.
+You are strong, kind, inspiring, and one of the most beautiful parts of my world.
+</p>
+
+<p>
+May this year bring you happiness beyond measure,
+good health, success in everything you pursue,
+and countless reasons to smile.
+</p>
+
+<p>
+And someday, I hope I won't be sending birthday wishes from miles away.
+Instead, I'll be right there beside you, celebrating every moment together.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">
+Our Memories 📸
+</h2>
+
+<div class="gallery">
+
+<img src="memory1.jpeg">
+<img src="memory2.jpeg">
+<img src="memory3.jpeg">
+<img src="memory4.jpeg">
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">
+One Last Thing ✨
+</h2>
+
+<button class="btn" onclick="showSurprise()">
+Click Me
+</button>
+
+<div id="surprise" class="hidden" style="margin-top:30px;">
+
+<div class="glass">
+
+<h2 style="margin-bottom:20px;">
+I Miss You Soooo Muchhhh 🤍
+</h2>
+
+<p>
+No matter how many miles separate us,
+</p>
+
+<p>
+you will always be my favorite place to come home to.
+</p>
+
+<p>
+I love you.
+</p>
+
+<p>
+Happy Birthday, Babe 🤍
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="footer">
+Made with love, across every mile ✈️🤍
+</div>
+
+<audio autoplay loop>
+<source src="me&u.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+
+function openLetter(){
+document.getElementById("letter")
+.scrollIntoView({
+behavior:"smooth"
+});
+}
+
+function showSurprise(){
+document.getElementById("surprise").style.display="block";
+}
+
+for(let i=0;i<90;i++){
+
+let star=document.createElement("div");
+
+star.className="star";
+star.innerHTML="✦";
+
+star.style.left=Math.random()*100+"vw";
+star.style.top=Math.random()*100+"vh";
+star.style.color="white";
+star.style.fontSize=(4+Math.random()*10)+"px";
+star.style.animationDelay=Math.random()*4+"s";
+
+document.body.appendChild(star);
+
+}
+
+</script>
+
+</body>
+</html>
