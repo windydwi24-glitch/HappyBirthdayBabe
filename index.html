@@ -277,17 +277,25 @@ Happy Birthday, Babe 🤍
 Made with love, across every mile ✈️🤍
 </div>
 
-<audio autoplay loop>
+<audio id="bgMusic" loop>
 <source src="me&u.mp3" type="audio/mpeg">
 </audio>
 
 <script>
 
 function openLetter(){
+
+const music = document.getElementById("bgMusic");
+
+music.play().catch(err=>{
+console.log(err);
+});
+
 document.getElementById("letter")
 .scrollIntoView({
 behavior:"smooth"
 });
+
 }
 
 function showSurprise(){
